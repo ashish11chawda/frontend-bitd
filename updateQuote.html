@@ -31,23 +31,24 @@
     </header>
     <main>
         <section class="contact-clean">
-            <form method="post">
                 <h2 class="text-center">Update Quote</h2>
-                <div class="mb-3"><input class="form-control" type="text" name="quoteId" placeholder="Quote ID"></div>
-                <div class="mb-3"><input class="form-control" type="text" name="quote" placeholder="Quote"></div>
-                <div class="mb-3"><input class="form-control" type="text" name="author" placeholder="Author"></div>
-                <div class="d-md-flex justify-content-md-center align-items-md-center mb-3"><button class="btn btn-primary d-md-flex m-0" type="submit">update quote</button></div>
-                <div>
-                    <p>Paragraph</p>
-                    <p class="text-end">Paragraph</p>
+                <div class="mb-3"><input id="quoteId" class="form-control" type="text" name="quoteId" placeholder="Quote ID"></div>
+                <div class="mb-3"><input id="quote" class="form-control" type="text" name="quote" placeholder="Quote"></div>
+                <div class="mb-3"><input id="author" class="form-control" type="text" name="author" placeholder="Author"></div>
+                <div class="d-md-flex justify-content-md-center align-items-md-center mb-3"><button onclick="updateQuote()" class="btn btn-primary d-md-flex m-0" type="submit">update quote</button></div>
+                <div id="quotes" class="m-5">
+                    <div class="quote">
+                        <p id="quoteData"></p>
+                        <p id="authorData"></p>
+                    </div>
                 </div>
-            </form>
         </section>
         <footer class="footer-basic">
             <div class="social"><a href="https://twitter.com/ashish11chawda"><i class="fab fa-twitter" style="color: #055ada;"></i></a><a href="https://www.linkedin.com/in/ashishchawda/"><i class="fab fa-linkedin" style="color: #055ada;"></i></a><a href="https://github.com/pixan198"><i class="fab fa-github" style="color: #055ada;"></i></a><a href="https://www.instagram.com/_tachyon._/"><i class="fab fa-instagram" style="color: #055ada;"></i></a><a href="https://ashishchawda.codes/"><i class="fas fa-globe" style="color: #055ada;"></i></a></div>
             <p class="copyright">Ashish Chawda © 2022</p>
         </footer>
     </main>
+    <script src="./assets/script/index.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
